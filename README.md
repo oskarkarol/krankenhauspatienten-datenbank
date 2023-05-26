@@ -5,6 +5,22 @@ Die Datenbank ist eine Krankenhauspatienten-Datenbank, die dazu dient, Informati
 # ER-Modell
 ![Screenshot](krankenhauspatienten.png)
 
+# Relationsschreibweise
+
+Patient(patient_id, first_name, last_name, gender, birth_date, contact_number, insurance_id)
+
+Disease(disease_id, name, description, symptoms)
+
+Doctor(doctor_id, first_name, last_name, specialization, contact_number, employment_status)
+
+Insurance(insurance_id, insurance_provider, coverage_details)
+
+Medication(medication_id, name, dosage, side_effects, administration_instructions)
+
+Treatment(treatment_id, patient_id, doctor_id, disease_id, treatment_date, duration)
+
+TreatmentMedication(treatment_id, medication_id)
+
 # SQL-Statements
 
 **3 Abfragen an eine einzige Tabelle:**
