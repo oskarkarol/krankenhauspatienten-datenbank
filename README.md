@@ -96,6 +96,24 @@ WHERE p.gender = 'weiblich';
 Beschreibung: Diese Abfrage gibt den Vor- und Nachnamen der weiblichen Patienten zusammen mit dem Namen der Krankheit und dem Behandlungsdatum zurück.
 ```
 
+```sql
+SELECT p.first_name, p.last_name, COUNT(t.treatment_id) AS treatment_count
+FROM Patient p
+INNER JOIN Treatment t ON p.patient_id = t.patient_id
+GROUP BY p.first_name, p.last_name;
+
+Beschreibung: Diese Abfrage zählt die Anzahl der Behandlungen für jeden Patienten und gibt den Vornamen, Nachnamen und die Anzahl der Behandlungen zurück. Sie verwendet den INNER JOIN zwischen den Tabellen "Patient" und "Treatment" und gruppiert die Ergebnisse nach Vorname und Nachname des Patienten.
+```
+
+```sql
+SELECT d.name AS disease_name, COUNT(t.patient_id) AS patient_count
+FROM Disease d
+INNER JOIN Treatment t ON d.disease_id = t.disease_id
+GROUP BY d.name;
+
+Beschreibung: Diese Abfrage zählt die Anzahl der Patienten für jede Krankheit in der Tabelle "Disease". Sie verwendet den INNER JOIN zwischen den Tabellen "Disease" und "Treatment", um die Krankheitsdaten mit den entsprechenden Behandlungsdaten zu verknüpfen. Anschließend wird die Anzahl der Patienten pro Krankheit gruppiert und zurückgegeben.
+```
+
 **5 Abfragen mit Gruppierung und Aggregationsfunktionen:**
 
 ```sql
