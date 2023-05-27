@@ -1,3 +1,13 @@
+# Projekt - Erstellen einer Datenbank | Heinrich-Hertz-Schule (HHS)
+
+# Aufgabe: [Download PDF](./datenbankprojekt2.pdf)
+
+---
+
+***
+
+___
+
 # Eine kurze Beschreibung der Datenbank
 
 Die Datenbank ist eine Krankenhauspatienten-Datenbank, die dazu dient, Informationen über Patienten, Krankheiten, Behandlungen, Medikamente, Ärzte und Versicherungen zu speichern. Sie ermöglicht es, Patientendaten zu verwalten, Behandlungen zu dokumentieren, Medikationen zuzuordnen, Ärzte zuzuweisen und Informationen über Krankheiten und Versicherungen zu speichern. Die Datenbank verwendet Beziehungen zwischen den verschiedenen Tabellen, um die Zusammenhänge und Abhängigkeiten zwischen den Daten darzustellen. Sie ermöglicht eine effiziente Verwaltung und Abfrage von Informationen für medizinisches Personal und Administratoren im Krankenhausumfeld.
